@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Showrooms · conceptos</title>
+<style>
+  :root{ --fg:#333a3c; --soft:rgba(51,58,60,.55); --line:rgba(51,58,60,.14); --surface:#f7f3f0; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:"Montserrat",system-ui,sans-serif; color:var(--fg); background:var(--surface); -webkit-font-smoothing:antialiased; }
+  .wrap{ max-width:960px; margin:0 auto; padding:64px 24px 80px; }
+  .eye{ font-size:10.5px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--soft); margin:0 0 10px; }
+  h1{ font-family:"League Spartan","Montserrat",sans-serif; font-weight:300; letter-spacing:-.02em; font-size:clamp(2rem,5vw,3rem); margin:0 0 10px; }
+  p.lead{ color:var(--soft); max-width:52ch; line-height:1.7; margin:0 0 40px; }
+  .grid{ display:grid; grid-template-columns:1fr; gap:16px; }
+  @media(min-width:680px){ .grid{ grid-template-columns:1fr 1fr; } }
+  a.card{ display:block; text-decoration:none; color:var(--fg); background:#fff; border:1px solid var(--line); border-radius:16px; padding:26px; transition:transform .2s ease, border-color .2s ease; }
+  a.card:hover{ transform:translateY(-3px); border-color:rgba(51,58,60,.3); }
+  a.card .t{ font-family:"League Spartan","Montserrat",sans-serif; font-weight:300; font-size:1.5rem; letter-spacing:-.01em; margin:0 0 6px; }
+  a.card .d{ font-size:13px; line-height:1.6; color:var(--soft); margin:0; }
+  a.card .k{ font-size:10px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--soft); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eye">Rols · Showrooms 2026</p>
+    <h1>Cuatro direcciones</h1>
+    <p class="lead">Mismo contenido y misma visual Rols 2026; cambia la forma de presentar los 8 showrooms. Elige la que más te guste.</p>
+    <div class="grid">
+      <a class="card" href="a.html"><span class="k">Concepto A</span><p class="t">Editorial por filas</p><p class="d">Cada showroom en una fila grande: imagen a un lado y datos al otro, alternando.</p></a>
+      <a class="card" href="b.html"><span class="k">Concepto B</span><p class="t">Mapa + listado</p><p class="d">Mapa a trazo con los 8 showrooms marcados y el listado de fichas al lado.</p></a>
+      <a class="card" href="c.html"><span class="k">Concepto C</span><p class="t">Galería inmersiva</p><p class="d">Mosaico grande de los espacios como protagonista y el detalle de cada showroom debajo.</p></a>
+      <a class="card" href="d.html"><span class="k">Concepto D</span><p class="t">Fichas con imagen</p><p class="d">Rejilla de tarjetas con cabecera de imagen y mejor jerarquía (no listado plano).</p></a>
+    </div>
+  </div>
+</body>
+</html>
